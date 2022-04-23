@@ -66,7 +66,7 @@ const Services = () => {
 
           <ul className="service__list">
             <li>
-              <BiCheck className="service__list-icon" />
+              <BiCheck className="service__list-icon" size={70} />
               <p>
                 Karam Guliyev Karam Guliyev Karam Guliyev Karam Guliyev Karam
                 Guliyev
