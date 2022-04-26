@@ -1,6 +1,6 @@
 {
   "name": "kg",
-  "homepage" : "http://localhost:3000",
+  "homepage": "https://kgportfolio-5f7cd.web.app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
