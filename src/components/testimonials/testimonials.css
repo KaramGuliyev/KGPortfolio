@@ -1,3 +1,12 @@
+#testimonials {
+  height: 100vh;
+  align-items: center;
+  position: relative;
+}
+h5 {
+  padding-top: 2rem;
+}
+
 .container.testimonials__container {
   width: 40%;
 }
@@ -17,6 +26,7 @@
   padding: 2rem;
   border-radius: 2rem;
   user-select: none;
+  
 }
 
 .client_review {
@@ -25,11 +35,6 @@
   display: block;
   width: 80%;
   margin: 0.8rem auto 0;
-}
-
-.nobackground {
-    box-shadow: none;
-    background: transparent !important;
 }
 
 @media screen and (max-width: 1024px) {
