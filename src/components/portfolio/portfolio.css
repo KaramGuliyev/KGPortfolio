@@ -22,13 +22,17 @@
   border-radius: 1.5rem;
   overflow: hidden;
 }
+.center {
+  text-align: center;
+}
 
 .portfolio__item h3 {
   margin: 1.2rem 0 2rem;
 }
 
 .portfolio__item-cta {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   margin-bottom: 1rem;
 }
