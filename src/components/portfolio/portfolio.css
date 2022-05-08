@@ -32,9 +32,12 @@
 
 .portfolio__item-cta {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 1rem;
   text-align: center;
+}
+.gd {
+  width: 100% !important;
 }
 
 @media screen and (max-width: 1024px) {
@@ -46,9 +49,7 @@
     display: grid;
     grid-template-columns: 1fr;
   }
-  .gd {
-    width: 100% !important;
-  }
+
 }
 
 @media screen and (max-width: 600px) {
