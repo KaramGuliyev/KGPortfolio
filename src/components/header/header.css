@@ -32,16 +32,6 @@ header {
   animation: leftSpin 1s 1.5s forwards;
 }
 
-@keyframes leftSpin {
-    from {
-        transform: rotate(90deg);
-    }
-    to {
-        opacity: 1;
-        transform: rotate(0);
-    }
-}
-
 .header__socials::after {
   content: "";
   width: 1px;
@@ -61,6 +51,9 @@ header {
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
   padding: 5rem 1.5rem 1.5rem 1.5rem;
+  animation: backInUp 1s forwards;
+  transform: translateY(6rem);
+  animation-duration: 3s;
 }
 
 /* SCROLL DOWN  */
@@ -74,17 +67,6 @@ header {
   opacity: 0;
   animation: rightSpin 1s 1.5s forwards;
 }
-
-@keyframes rightSpin {
-    from {
-        transform: rotate(0);
-    }
-    to {
-        opacity: 1;
-        transform: rotate(90deg);
-    }
-}
-
 
 /* MEDIA QUERIES FOR SMALL DEVICES*/
 
@@ -104,5 +86,41 @@ header {
   .header__socials,
   .scroll__down {
     display: none;
+  }
+}
+
+@keyframes rightSpin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes leftSpin {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0);
+  }
+}
+@keyframes backInUp {
+  0% {
+    transform: scale(0.5) translateY(25rem);
+    opacity: 0.0;
+  }
+
+  50% {
+    opacity: 0.5;
+    transform: scale(0.5);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0rem);
   }
 }
