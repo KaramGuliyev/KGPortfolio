@@ -27,7 +27,7 @@
 }
 
 .about__me-image:hover {
-  transform: scale(0.75);
+  transform: scale(0.95);
   transition: 1s;
   border: 2px solid var(--color-light);
 }
